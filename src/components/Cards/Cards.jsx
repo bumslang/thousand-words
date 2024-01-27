@@ -49,13 +49,30 @@ function Cards() {
         }
     }
 
+    function getReset() {
+        localStorage.setItem('learnedWords', JSON.stringify([]));
+        setNotLearnedWords([
+            ['again', 'снова'],
+            ['animal', 'животное'],
+            ['point', 'точка'],
+            ['mother', 'мама'],
+            ['world', 'мир'],
+            ['near', 'возле'],
+            ['build', 'строить'],
+            ['self', 'себя'],
+            ['earth', 'Земля'],
+            ['father', 'папа'],
+          ])
+        localStorage.setItem('notLearnedWords', JSON.stringify(notLearnedWords))
+    }
+
     let displayCards = <div className={classes.card}>
         <p className={classes.word}>{wordToDisplay}</p>
         <p className={classes.word} >{translateWord}</p>
         <div className={classes.buttons}>
             <button className={classes.button} hidden={translateWord ? true : false} onClick={getNextWord}>ЗНАЮ</button>
             <button className={classes.button} onClick={getTranslate}>{translateWord ? 'ЗАПОМНИЛ' : "НЕ ЗНАЮ"}</button>
-            <button onClick={() => localStorage.setItem('learnedWords', JSON.stringify([]))} className={classes.button}>СБРОС</button>
+            <button onClick={getReset} className={classes.button}>СБРОС</button>
         </div>
     </div>
 
