@@ -1,0 +1,15 @@
+.button {
+    display: flex;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: inherit;
+    background: linear-gradient(rgb(25 168 255 / 70%), rgb(37 217 177 / 45%), rgb(5 255 49 / 31%));
+}
+
+/* .button:hover {
+    transform: rotateZ(360deg);
+} */

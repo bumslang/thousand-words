@@ -1,0 +1,44 @@
+.table {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    font-weight: 500;
+    width: 20%;
+}
+
+.nameCell {
+    display: flex;
+    justify-content: center;
+    border: 5px solid rgb(134, 201, 33);
+    margin: 1px;
+    border-radius: 7px;
+    font-weight: 700;
+    color: rgb(245 27 27);
+    width: 50%;
+}
+
+.nameTable {
+    display: flex;
+    justify-content: center;
+    border: 5px solid rgb(134, 201, 33);
+    margin: 1px;
+    border-radius: 7px;
+    font-weight: 700;
+    color: rgb(245 27 27);
+    width: 100%;
+}
+
+.row {
+    display: flex;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    border: 5px solid rgb(134, 201, 33);
+    margin: 1px;
+    border-radius: 7px;
+    width: 50%;
+
+}

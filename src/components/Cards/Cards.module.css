@@ -1,0 +1,40 @@
+.card {
+    box-sizing: border-box;
+    width: 20%;
+    height: 50vh;
+    border: 4px solid rgb(255, 0, 0);
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: 3px 5px 4px rgba(249, 9, 217, 0.423);
+    text-transform: uppercase;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #82a5cd;
+    /* начальный цвет кнопки */
+    color: #ffffff;
+    /* цвет текста */
+    transition: font-size 0.5s ease, color 0.5s ease;
+    border-radius: 7px;
+}
+
+.button:hover {
+    background-color: #3ce168; /* изменяемый цвет кнопки при наведении */
+    color: #000; /* изменяемый цвет текста при наведении */
+  }
+
+  .word{
+    text-shadow: -1px 1px 1px #09ff82;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+  }
