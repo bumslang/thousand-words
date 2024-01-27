@@ -21,6 +21,7 @@ function App() {
       ['father', 'папа'],
     ]))
   }
+  if (localStorage.getItem('learnedWords') === null) localStorage.setItem('learnedWords', JSON.stringify([]));
   
   let [notLearnedWords, setNotLearnedWords] = useState(JSON.parse(localStorage.getItem('notLearnedWords')));
   let [displayComponent, setDisplayComponent] = useState('CARDS');

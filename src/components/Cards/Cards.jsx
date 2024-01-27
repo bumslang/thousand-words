@@ -6,7 +6,7 @@ function Cards() {
     let { notLearnedWords, setNotLearnedWords, displayComponent, randomNum, setRandomNum, translateWord, setTranslateWord } = useContext(MyContext);
     let wordToDisplay = notLearnedWords[randomNum] ? notLearnedWords[randomNum][0] : setRandomNum(3);
 
-    if (localStorage.getItem('learnedWords') === null) localStorage.setItem('learnedWords', JSON.stringify([]));
+    // if (localStorage.getItem('learnedWords') === null) localStorage.setItem('learnedWords', JSON.stringify([]));
 
     if (notLearnedWords.length <= 4) {
         let localStorageArr = JSON.parse(localStorage.getItem('learnedWords'));
